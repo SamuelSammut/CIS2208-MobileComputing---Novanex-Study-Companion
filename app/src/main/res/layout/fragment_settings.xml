@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <TextView
+        android:id="@+id/textSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{settingsViewModel.text}"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+
+    <Switch
+        android:id="@+id/switchDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Dark Mode"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How the app works"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This app helps you manage your study schedule. You can create subjects, set exam dates, and create quizzes for each subject. Track your progress and prepare for your exams effectively with the tools provided."
+        android:textSize="16sp"/>
+</LinearLayout>

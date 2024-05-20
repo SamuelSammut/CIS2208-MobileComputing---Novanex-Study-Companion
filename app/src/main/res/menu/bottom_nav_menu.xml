@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/navigation_subjects"
+        android:icon="@drawable/baseline_subject_24"
+        android:title="@string/title_subjects"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/navigation_quizzes"
+        android:icon="@drawable/baseline_quiz_24"
+        android:title="@string/title_quizzes"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="@string/title_settings"
+        app:showAsAction="ifRoom" />
+</menu>

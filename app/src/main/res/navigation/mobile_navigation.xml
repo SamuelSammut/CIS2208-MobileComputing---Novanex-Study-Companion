@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.novanex_studycompanion.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_subjects"
+        android:name="com.example.novanex_studycompanion.ui.subjects.SubjectsFragment"
+        android:label="@string/title_subjects"
+        tools:layout="@layout/fragment_subjects" />
+
+    <fragment
+        android:id="@+id/navigation_quizzes"
+        android:name="com.example.novanex_studycompanion.ui.quiz.QuizzesFragment"
+        android:label="@string/title_quizzes"
+        tools:layout="@layout/fragment_quizzes">
+        <action
+            android:id="@+id/action_quizzesFragment_to_takeQuizFragment"
+            app:destination="@id/takeQuizFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.novanex_studycompanion.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/takeQuizFragment"
+        android:name="com.example.novanex_studycompanion.ui.quiz.TakeQuizFragment"
+        android:label="Take Quiz"
+        tools:layout="@layout/fragment_take_quiz">
+        <argument
+            android:name="subjectTitle"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_takeQuizFragment_to_navigation_quizzes"
+            app:destination="@id/navigation_quizzes" />
+    </fragment>
+</navigation>
