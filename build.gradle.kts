@@ -8,7 +8,7 @@ plugins {
 
 buildscript {
 
-    val nav_version by extra("2.5.1") // Adjust to your version
+    val nav_version by extra("2.5.1")
 
     dependencies {
 
